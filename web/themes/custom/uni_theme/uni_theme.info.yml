@@ -1,0 +1,16 @@
+name: University Theme
+type: theme
+description: 'Custom theme for university website demo'
+core_version_requirement: ^10
+base theme: false
+
+libraries:
+  - uni_theme/global-styling
+
+regions:
+  header: Header
+  primary_menu: Primary Menu
+  hero: Hero Section
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

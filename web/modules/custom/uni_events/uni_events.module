@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * University Events module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uni_events_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.uni_events':
+      return '<p>' . t('Provides event management for the university website.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function uni_events_theme($existing, $type, $theme, $path) {
+  return [
+    'uni_events_block' => [
+      'variables' => [
+        'events' => [],
+      ],
+      'template' => 'uni-events-block',
+    ],
+  ];
+}

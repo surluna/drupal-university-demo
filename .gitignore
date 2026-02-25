@@ -1,0 +1,17 @@
+# Drupal core and contrib (can be rebuilt with composer)
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+
+# Files
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Settings
+/web/sites/*/settings.local.php
+
+# OS files
+.DS_Store
+Thumbs.db

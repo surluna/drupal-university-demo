@@ -1,0 +1,27 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <a href="{{ path('<front>') }}" class="site-logo">University Demo Site</a>
+  <nav class="main-nav">
+    {{ page.primary_menu }}
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Vivien's University Demo Site</h1>
+  <p>A Drupal portfolio project demonstrating custom theme and module development</p>
+</section>
+
+<main id="main-content" class="main-content">
+  <div class="content-area">
+    {{ page.content }}
+  </div>
+  
+  <aside class="sidebar">
+    {{ page.sidebar }}
+  </aside>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 University Demo Site. Built with Drupal.</p>
+</footer>
